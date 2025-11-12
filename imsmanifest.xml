@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="com.p5js.arknightsquiz" version="1.2"
+          xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+          xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+    
+    <metadata>
+        <schema>ADL SCORM</schema>
+        <schemaversion>1.2</schemaversion>
+        <lom xmlns="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1">
+            <general>
+                <title>
+                    <langstring xml:lang="zh-TW">明日方舟測試問答</langstring>
+                </title>
+                <description>
+                    <langstring xml:lang="zh-TW">一個關於明日方舟的 p5.js 測驗。</langstring>
+                </description>
+            </general>
+        </lom>
+    </metadata>
+    
+    <organizations default="arknights-quiz-org">
+        <organization identifier="arknights-quiz-org">
+            <title>明日方舟測試問答</title>
+            <item identifier="item_1" identifierref="resource_1">
+                <title>測驗</title>
+            </item>
+        </organization>
+    </organizations>
+    
+    <resources>
+        <resource identifier="resource_1" type="webcontent" adlcp:scormtype="sco" href="index.html">
+            <file href="index.html"/>
+            <file href="sketch.js"/>
+            <file href="style.css"/>
+            <file href="scorm_api_wrapper.js"/>
+            <file href="quiz.csv"/>
+            <!-- 如果您有其他圖片或資源，也需要在此列出 -->
+            <!-- 例如: <file href="images/amiya.png"/> -->
+        </resource>
+    </resources>
+    
+</manifest>
